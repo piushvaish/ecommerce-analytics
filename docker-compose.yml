@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  streamlit:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - '8501:8501'
+    volumes:
+      - './Data:/usr/src/app/data:delegated'
+      - './project:/usr/src/app/project:delegated'
+      - './model:/usr/src/app/model:delegated'
+      - './images:/usr/src/app/images:delegated'
+    environment:
+      - USER_ID=1000
+      - GROUP_ID=1000
