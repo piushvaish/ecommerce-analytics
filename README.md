@@ -3,9 +3,6 @@ I have generated this showcase of what I can help our clients with by using the 
 
 Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. The data is available at [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 
-The link for application: http://ec2-18-204-15-182.compute-1.amazonaws.com:8501/
-
-(I have stopped running of the application to save cost. Please contact me and I will re-deploy the application)
 
 E-Commerce is a fast-growing and highly competitive space. Businesses need to continue testing and iterating to improve business operations, stand out from the competition and ensure that it is moving in the right direction.
 
