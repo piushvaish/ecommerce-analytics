@@ -1,8 +1,7 @@
 ## Welcome to Analytics Dashboard
-I have generated this showcase of what I can help our clients with by using the data from [Olist](https://olist.com/en-us/), the largest department store in Brazilian marketplaces & dummy data. 
+I have generated this showcase of what I can help our clients with by using the data from [Olist](https://olist.com/en-us/), the largest department store in Brazilian marketplaces. 
 
-Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. The data is available at [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
-
+Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners.
 
 E-Commerce is a fast-growing and highly competitive space. Businesses need to continue testing and iterating to improve business operations, stand out from the competition and ensure that it is moving in the right direction.
 
@@ -26,23 +25,21 @@ The application is divided into:
 
 8. Animated Bubble Plot
 
-### Build a Docker image
-```
-docker build -t streamlitapp:latest .
-```
-### Create a container
-```
-docker run -p 8501:8501 streamlitapp:latest
-```
-We can access the application on your desktop by visiting http://localhost:8501/
+### Data Description
+The [dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allow viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, geolocation, product attributes and finally reviews written by customers.
 
-### Overview of Tasks to Deploy Web Application
-* Build a cross-platform web app that incorporates online prediction functionality
-* Create a Dockerfile
-* Build and push a Docker image on Amazon Elastic Container Registry
-* Create and execute a task to deploy the app using AWS Fargate’s serverless infrastructure.
+![Order Data Schema](https://github.com/piushvaish/ecommerce-analytics/blob/main/olist_images/olist_data_schema.png)
 
-### Technologies Used
+Marketing funnel dataset from sellers that filled-in requests of contact to 
+    sell their products on Olist Store. 
+    The dataset has information of 8k Marketing Qualified Leads (MQLs) that 
+    requested contact between Jun. 1st 2017 and Jun 1st 2018. 
+    They were randomly sampled from the total of MQLs. 
+    Its features allow viewing a sales process from multiple dimensions: 
+    lead category, catalog size, behaviour profile, etc. 
+ ![Marketing Funnel Schema](https://github.com/piushvaish/ecommerce-analytics/blob/main/olist_images/olist_marketing_dataset_schema.png)
+ 
+ ### Technologies Used
 #### Streamlit
 Streamlit is an open-source framework for the rapid development of interactive, highly interactive, and fast machine learning and data science web applications. It is extremely well designed and easy to use. 
 
@@ -77,3 +74,21 @@ It minimizes the need for constant server provisioning and management, lets you 
 It eliminates the need to select instances and scale cluster capacity since Fargate allocates the right amount of computing. 
 
 Using containers will save you from over-provisioning and paying for additional servers.
+
+
+### Build a Docker image
+```
+docker build -t streamlitapp:latest .
+```
+### Create a container
+```
+docker run -p 8501:8501 streamlitapp:latest
+```
+We can access the application on your desktop by visiting http://localhost:8501/
+
+### Overview of Tasks to Deploy Web Application
+* Build a cross-platform web app that incorporates online prediction functionality
+* Create a Dockerfile
+* Build and push a Docker image on Amazon Elastic Container Registry
+* Create and execute a task to deploy the app using AWS Fargate’s serverless infrastructure.
+
