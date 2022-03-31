@@ -1,11 +1,14 @@
-## Welcome to Analytics Dashboard
-I have generated this showcase of what I can help our clients with by using the data from [Olist](https://olist.com/en-us/), the largest department store in Brazilian marketplaces. 
-
-Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners.
-
+### Background
 E-Commerce is a fast-growing and highly competitive space. Businesses need to continue testing and iterating to improve business operations, stand out from the competition and ensure that it is moving in the right direction.
 
-The GitHub repository has code for a web application that tracks multiple metrics that can help the businesses to measure their performance against objectives and the overall health. 
+Ecommerce analytics is the process of accumulating data from all of the areas that have an impact on your store. You should then use this data so that you can comprehend shifts in customer behavior and online shopping trends.
+
+Ultimately, you can make more intelligent decisions by basing them on data, which should result in more online sales being made.
+
+Ecommerce analytics can include a wide range of metrics relating to the full customer journey, such as discovery, acquisition, conversion, retention and advocacy.
+
+### Welcome to Analytics Dashboard
+The repository has code for a web application that tracks multiple metrics that can help the businesses to measure their performance against objectives and the overall health. 
 
 The application is divided into:
 
@@ -26,6 +29,10 @@ The application is divided into:
 8. Animated Bubble Plot
 
 ### Data Description
+The data is from [Olist](https://olist.com/en-us/), the largest department store in Brazilian marketplaces
+
+Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners.
+
 The [dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allow viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, geolocation, product attributes and finally reviews written by customers.
 
 ![Order Data Schema](https://github.com/piushvaish/ecommerce-analytics/blob/main/olist_images/olist_data_schema.png)
